@@ -1,0 +1,9 @@
+\begin{MintedVerbatim}[commandchars=\\\{\}]
+\PYG{c}{\PYGZpc{}\PYGZpc{} 将问题参数打包进 schemeData}
+\PYG{c}{\PYGZpc{} 将网格和动力学系统打包进 schemeData}
+\PYG{n}{schemeData}\PYG{p}{.}\PYG{n}{grid}\PYG{+w}{ }\PYG{p}{=}\PYG{+w}{ }\PYG{n}{g}\PYG{p}{;}
+\PYG{n}{schemeData}\PYG{p}{.}\PYG{n}{dynSys}\PYG{+w}{ }\PYG{p}{=}\PYG{+w}{ }\PYG{n}{dCar}\PYG{p}{;}
+\PYG{n}{schemeData}\PYG{p}{.}\PYG{n}{accuracy}\PYG{+w}{ }\PYG{p}{=}\PYG{+w}{ }\PYG{l+s}{\PYGZsq{}}\PYG{l+s}{high\PYGZsq{}}\PYG{p}{;}\PYG{+w}{ }\PYG{c}{\PYGZpc{} 设置求解精度}
+\PYG{n}{schemeData}\PYG{p}{.}\PYG{n}{uMode}\PYG{+w}{ }\PYG{p}{=}\PYG{+w}{ }\PYG{n}{uMode}\PYG{p}{;}
+\PYG{n}{schemeData}\PYG{p}{.}\PYG{n}{dMode}\PYG{+w}{ }\PYG{p}{=}\PYG{+w}{ }\PYG{n}{dMode}\PYG{p}{;}
+\end{MintedVerbatim}

@@ -1,0 +1,7 @@
+\begin{MintedVerbatim}[commandchars=\\\{\}]
+\PYG{c}{\PYGZpc{}\PYGZpc{} 时间向量}
+\PYG{n}{t0}\PYG{+w}{ }\PYG{p}{=}\PYG{+w}{ }\PYG{l+m+mi}{0}\PYG{p}{;}
+\PYG{n}{tMax}\PYG{+w}{ }\PYG{p}{=}\PYG{+w}{ }\PYG{l+m+mi}{2}\PYG{p}{;}
+\PYG{n}{dt}\PYG{+w}{ }\PYG{p}{=}\PYG{+w}{ }\PYG{l+m+mf}{0.05}\PYG{p}{;}
+\PYG{n}{tau}\PYG{+w}{ }\PYG{p}{=}\PYG{+w}{ }\PYG{n}{t0}\PYG{p}{:}\PYG{n}{dt}\PYG{p}{:}\PYG{n}{tMax}\PYG{p}{;}
+\end{MintedVerbatim}

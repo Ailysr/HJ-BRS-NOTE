@@ -1,0 +1,5 @@
+\begin{MintedVerbatim}[commandchars=\\\{\}]
+\PYG{n}{R}\PYG{+w}{ }\PYG{p}{=}\PYG{+w}{ }\PYG{l+m+mi}{1}\PYG{p}{;}
+\PYG{n}{data0}\PYG{+w}{ }\PYG{p}{=}\PYG{+w}{ }\PYG{n}{shapeCylinder}\PYG{p}{(}\PYG{n}{g}\PYG{p}{,}\PYG{+w}{ }\PYG{l+m+mi}{3}\PYG{p}{,}\PYG{+w}{ }\PYG{p}{[}\PYG{l+m+mi}{0}\PYG{p}{;}\PYG{+w}{ }\PYG{l+m+mi}{0}\PYG{p}{;}\PYG{+w}{ }\PYG{l+m+mi}{0}\PYG{p}{]}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{R}\PYG{p}{)}\PYG{p}{;}
+\PYG{c}{\PYGZpc{} 可以尝试其他的目标集形状 shapeRectangleByCorners, shapeSphere.}
+\end{MintedVerbatim}

@@ -1,0 +1,12 @@
+\begin{MintedVerbatim}[commandchars=\\\{\}]
+\PYG{c}{\PYGZpc{}\PYGZpc{} 问题参数}
+\PYG{n}{speed}\PYG{+w}{ }\PYG{p}{=}\PYG{+w}{ }\PYG{l+m+mi}{1}\PYG{p}{;}\PYG{+w}{      }\PYG{c}{\PYGZpc{} 车辆的速度（常数）}
+\PYG{c}{\PYGZpc{} 输入边界·扰动定义}
+\PYG{n}{wMax}\PYG{+w}{ }\PYG{p}{=}\PYG{+w}{ }\PYG{l+m+mi}{1}\PYG{p}{;}
+\PYG{n}{dMax}\PYG{+w}{ }\PYG{p}{=}\PYG{+w}{ }\PYG{p}{[}\PYG{l+m+mf}{.25}\PYG{p}{,}\PYG{+w}{ }\PYG{l+m+mf}{.25}\PYG{p}{,}\PYG{+w}{ }\PYG{l+m+mi}{0}\PYG{p}{]}\PYG{p}{;}
+\PYG{c}{\PYGZpc{} 存在控制·任意扰动}
+\PYG{n}{uMode}\PYG{+w}{ }\PYG{p}{=}\PYG{+w}{ }\PYG{l+s}{\PYGZsq{}}\PYG{l+s}{min\PYGZsq{}}\PYG{p}{;}
+\PYG{n}{dMode}\PYG{+w}{ }\PYG{p}{=}\PYG{+w}{ }\PYG{l+s}{\PYGZsq{}}\PYG{l+s}{max\PYGZsq{}}\PYG{p}{;}
+\PYG{n}{dCar}\PYG{+w}{ }\PYG{p}{=}\PYG{+w}{ }\PYG{n}{DubinsCar}\PYG{p}{(}\PYG{p}{[}\PYG{l+m+mi}{0}\PYG{p}{,}\PYG{+w}{ }\PYG{l+m+mi}{0}\PYG{p}{,}\PYG{+w}{ }\PYG{l+m+mi}{0}\PYG{p}{]}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{wMax}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{speed}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{dMax}\PYG{p}{)}\PYG{p}{;}\PYG{+w}{ }\PYG{c}{\PYGZpc{} 生成DubinsCar动力学系统}
+\PYG{c}{\PYGZpc{} dCar = DubinsCar([0, 0, 0], wMax, speed); \PYGZpc{} (没有扰动版)}
+\end{MintedVerbatim}

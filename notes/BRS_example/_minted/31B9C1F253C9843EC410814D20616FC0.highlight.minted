@@ -1,0 +1,4 @@
+\begin{MintedVerbatim}[commandchars=\\\{\}]
+\PYG{p}{[}\PYG{n}{data}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{tau}\PYG{p}{,}\PYG{+w}{ }\PYG{o}{\PYGZti{}}\PYG{p}{]}\PYG{+w}{ }\PYG{p}{=}\PYG{+w}{ }\PYG{k}{...}
+\PYG{+w}{  }\PYG{n}{HJIPDE\PYGZus{}solve}\PYG{p}{(}\PYG{n}{data0}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{tau}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{schemeData}\PYG{p}{,}\PYG{+w}{ }\PYG{l+s}{\PYGZsq{}}\PYG{l+s}{none\PYGZsq{}}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{HJIextraArgs}\PYG{p}{)}\PYG{p}{;}
+\end{MintedVerbatim}

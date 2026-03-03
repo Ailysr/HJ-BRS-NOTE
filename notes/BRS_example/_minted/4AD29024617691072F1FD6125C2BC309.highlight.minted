@@ -1,0 +1,18 @@
+\begin{MintedVerbatim}[commandchars=\\\{\}]
+\PYG{+w}{    }\PYG{n}{xinit}\PYG{+w}{ }\PYG{p}{=}\PYG{+w}{ }\PYG{p}{[}\PYG{l+m+mi}{2}\PYG{p}{;}\PYG{+w}{ }\PYG{l+m+mi}{0}\PYG{p}{;}\PYG{+w}{ }\PYG{n+nb}{pi}\PYG{p}{]}\PYG{p}{;}
+\PYG{+w}{    }\PYG{n}{value}\PYG{+w}{ }\PYG{p}{=}\PYG{+w}{ }\PYG{n}{eval\PYGZus{}u}\PYG{p}{(}\PYG{n}{g}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{data}\PYG{p}{(}\PYG{p}{:}\PYG{p}{,}\PYG{p}{:}\PYG{p}{,}\PYG{p}{:}\PYG{p}{,}\PYG{k}{end}\PYG{p}{)}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{xinit}\PYG{p}{)}\PYG{p}{;}\PYG{+w}{ }\PYG{c}{\PYGZpc{} 计算初始状态点的值函数值}
+\PYG{+w}{    }\PYG{k}{if}\PYG{+w}{ }\PYG{n}{value}\PYG{+w}{ }\PYG{o}{\PYGZlt{}=}\PYG{l+m+mi}{0}
+\PYG{+w}{        }\PYG{n}{dCar}\PYG{p}{.}\PYG{n}{x}\PYG{+w}{ }\PYG{p}{=}\PYG{+w}{ }\PYG{n}{xinit}\PYG{p}{;}
+\PYG{+w}{        }\PYG{n}{TrajextraArgs}\PYG{p}{.}\PYG{n}{uMode}\PYG{+w}{ }\PYG{p}{=}\PYG{+w}{ }\PYG{n}{uMode}\PYG{p}{;}\PYG{+w}{    }\PYG{c}{\PYGZpc{} 设置控制模式}
+\PYG{+w}{        }\PYG{n}{TrajextraArgs}\PYG{p}{.}\PYG{n}{dMode}\PYG{+w}{ }\PYG{p}{=}\PYG{+w}{ }\PYG{l+s}{\PYGZsq{}}\PYG{l+s}{max\PYGZsq{}}\PYG{p}{;}\PYG{+w}{    }\PYG{c}{\PYGZpc{} 设置扰动模式}
+\PYG{+w}{        }\PYG{n}{TrajextraArgs}\PYG{p}{.}\PYG{n}{visualize}\PYG{+w}{ }\PYG{p}{=}\PYG{+w}{ }\PYG{n+nb}{true}\PYG{p}{;}\PYG{+w}{ }\PYG{c}{\PYGZpc{} 可视化}
+\PYG{+w}{        }\PYG{n}{TrajextraArgs}\PYG{p}{.}\PYG{n}{fig\PYGZus{}num}\PYG{+w}{ }\PYG{p}{=}\PYG{+w}{ }\PYG{l+m+mi}{2}\PYG{p}{;}\PYG{+w}{      }\PYG{c}{\PYGZpc{} 图像编号}
+\PYG{+w}{        }\PYG{n}{TrajextraArgs}\PYG{p}{.}\PYG{n}{projDim}\PYG{+w}{ }\PYG{p}{=}\PYG{+w}{ }\PYG{p}{[}\PYG{l+m+mi}{1}\PYG{+w}{ }\PYG{l+m+mi}{1}\PYG{+w}{ }\PYG{l+m+mi}{0}\PYG{p}{]}\PYG{p}{;}\PYG{+w}{ }\PYG{c}{\PYGZpc{} 投影维度}
+\PYG{+w}{        }\PYG{c}{\PYGZpc{} 翻转数据时间点，使我们从时间的开始点开始计算轨迹}
+\PYG{+w}{        }\PYG{n}{dataTraj}\PYG{+w}{ }\PYG{p}{=}\PYG{+w}{ }\PYG{n+nb}{flip}\PYG{p}{(}\PYG{n}{data}\PYG{p}{,}\PYG{+w}{ }\PYG{l+m+mi}{4}\PYG{p}{)}\PYG{p}{;}
+\PYG{+w}{        }\PYG{p}{[}\PYG{n}{traj}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{traj\PYGZus{}tau}\PYG{p}{]}\PYG{+w}{ }\PYG{p}{=}\PYG{+w}{ }\PYG{k}{...}
+\PYG{+w}{        }\PYG{n}{computeOptTraj}\PYG{p}{(}\PYG{n}{g}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{dataTraj}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{tau2}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{dCar}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{TrajextraArgs}\PYG{p}{)}\PYG{p}{;}
+\PYG{+w}{    }\PYG{k}{else}
+\PYG{+w}{        }\PYG{n+nb}{error}\PYG{p}{(}\PYG{p}{[}\PYG{l+s}{\PYGZsq{}}\PYG{l+s}{初始状态不在 BRS/BRT 中! 其value为 \PYGZsq{}}\PYG{+w}{ }\PYG{n+nb}{num2str}\PYG{p}{(}\PYG{n}{value}\PYG{p}{,}\PYG{l+m+mi}{2}\PYG{p}{)}\PYG{p}{]}\PYG{p}{)}
+\PYG{+w}{    }\PYG{k}{end}
+\end{MintedVerbatim}
